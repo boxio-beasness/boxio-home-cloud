@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useNavigate } from "react-router-dom";
 import { Smartphone, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import Navbar from "@/components/Navbar";
 
 const Pairing = () => {
   const [code, setCode] = useState("");
@@ -39,8 +38,6 @@ const Pairing = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
-      <Navbar />
-      
       <div className="container mx-auto px-6 pt-32 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

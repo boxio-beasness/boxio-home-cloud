@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Server, ExternalLink, Settings, HardDrive, Wifi, Power } from "lucide-react";
-import Navbar from "@/components/Navbar";
 
 const Dashboard = () => {
   // Mock data - da sostituire con dati reali da Supabase
@@ -20,8 +19,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
-      <Navbar />
-      
       <div className="container mx-auto px-6 pt-24 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

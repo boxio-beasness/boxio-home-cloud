@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Label } from "@/components/ui/label";
 import { UserPlus, LogIn } from "lucide-react";
-import Navbar from "@/components/Navbar";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
 
@@ -32,8 +31,6 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-background">
-      <Navbar />
-      
       <div className="container mx-auto px-6 pt-32 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
