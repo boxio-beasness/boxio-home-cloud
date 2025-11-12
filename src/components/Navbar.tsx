@@ -20,12 +20,12 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-4">
-          <Link to="/auth">
-            <Button variant="ghost" size="sm" className="gap-2">
+          <Button variant="ghost" size="sm" className="gap-2" asChild>
+            <Link to="/auth">
               <LogIn className="w-4 h-4" />
               Login
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </motion.nav>

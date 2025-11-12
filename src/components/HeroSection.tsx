@@ -66,12 +66,12 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/pairing">
-                <Button size="lg" className="gap-2 group">
+              <Button size="lg" className="gap-2 group" asChild>
+                <Link to="/pairing">
                   Configura il tuo Boxio
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
               <Button size="lg" variant="outline">
                 Scopri di più
               </Button>
